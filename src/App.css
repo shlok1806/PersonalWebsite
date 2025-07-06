@@ -962,6 +962,17 @@ body {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+  /* Prevent horizontal scroll */
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  .App {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
   .nav-container {
     padding: 0 1rem;
   }
@@ -1025,7 +1036,20 @@ body {
   }
 
   main {
-    padding: 2rem 1rem;
+    padding: 1rem 0.5rem;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .section {
+    padding: 3rem 0.5rem;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding: 0 0.5rem;
+    width: 100%;
   }
 
   .about-content {
@@ -1141,6 +1165,33 @@ body {
 }
 
 @media (max-width: 480px) {
+  /* Extra aggressive mobile fixes */
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .App {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  main {
+    padding: 0.5rem 0.25rem;
+    width: 100%;
+  }
+  
+  .section {
+    padding: 2rem 0.25rem;
+    width: 100%;
+  }
+  
+  .container {
+    padding: 0 0.25rem;
+    width: 100%;
+  }
+
   .nav-menu {
     display: none;
   }
