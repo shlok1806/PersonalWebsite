@@ -1,0 +1,281 @@
+/* IDE Window Base Styles */
+.ide-window {
+  background: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #3c3c3c;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Monaco', 'Ubuntu Mono', monospace;
+}
+
+.ide-window:hover {
+  border-color: #007acc;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 122, 204, 0.2);
+  transform: translateY(-1px);
+}
+
+/* IDE Header */
+.ide-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: #2d2d30;
+  border-bottom: 1px solid #3c3c3c;
+  min-height: 48px;
+}
+
+.ide-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ide-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.ide-dot-red {
+  background: #ff5f56;
+}
+
+.ide-dot-yellow {
+  background: #ffbd2e;
+}
+
+.ide-dot-green {
+  background: #27ca3f;
+}
+
+.ide-filename {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Monaco', 'Ubuntu Mono', monospace;
+}
+
+/* IDE Content */
+.ide-content {
+  padding: 1.5rem;
+  min-height: 100px;
+  background: #1e1e1e;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Variants */
+.ide-window-default {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.ide-window-hero {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  background: rgba(13, 17, 23, 0.95);
+}
+
+.ide-window-compact {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ide-window-compact .ide-content {
+  padding: 1rem;
+  min-height: 60px;
+}
+
+/* Themes */
+.ide-window-dark {
+  background: rgba(13, 17, 23, 0.95);
+  color: #e5e7eb;
+}
+
+.ide-window-light {
+  background: rgba(255, 255, 255, 0.95);
+  color: #1f2937;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.ide-window-light .ide-header {
+  background: rgba(249, 250, 251, 0.95);
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+.ide-window-light .ide-content {
+  background: rgba(255, 255, 255, 0.95);
+  color: #1f2937;
+}
+
+.ide-window-light .ide-filename {
+  color: #6b7280;
+}
+
+/* Content Styling */
+.ide-content h1,
+.ide-content h2,
+.ide-content h3,
+.ide-content h4,
+.ide-content h5,
+.ide-content h6 {
+  color: #007acc;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ide-content p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ide-content ul,
+.ide-content ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.ide-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ide-content a {
+  color: #007acc;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.ide-content a:hover {
+  border-bottom-color: #007acc;
+  color: #4ec9b0;
+}
+
+.ide-content strong {
+  color: #007acc;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ide-content em {
+  color: #ce9178;
+  font-style: italic;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Code Styling */
+.ide-content code {
+  background: #2d2d30;
+  color: #d7ba7d;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.9em;
+  font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Monaco', 'Ubuntu Mono', monospace;
+  border: 1px solid #3c3c3c;
+}
+
+.ide-content pre {
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 1rem 0;
+  border: 1px solid #3c3c3c;
+  font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Monaco', 'Ubuntu Mono', monospace;
+}
+
+.ide-content pre code {
+  background: none;
+  padding: 0;
+  color: #ffffff;
+  font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Monaco', 'Ubuntu Mono', monospace;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ide-window {
+    border-radius: 8px;
+    margin: 0 1rem;
+  }
+
+  .ide-header {
+    padding: 0.5rem 0.75rem;
+    min-height: 40px;
+  }
+
+  .ide-content {
+    padding: 1rem;
+    min-height: 80px;
+  }
+
+  .ide-filename {
+    font-size: 0.8rem;
+  }
+
+  .ide-dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .ide-content h1,
+  .ide-content h2,
+  .ide-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .ide-content p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ide-window {
+    border-radius: 6px;
+    margin: 0 0.5rem;
+  }
+  
+  .ide-header {
+    padding: 0.5rem;
+    min-height: 36px;
+  }
+  
+  .ide-content {
+    padding: 0.75rem;
+    min-height: 60px;
+  }
+  
+  .ide-filename {
+    font-size: 0.75rem;
+  }
+  
+  .ide-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .ide-content h1,
+  .ide-content h2,
+  .ide-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .ide-content p {
+    font-size: 0.9rem;
+  }
+} 
