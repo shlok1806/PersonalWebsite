@@ -138,52 +138,70 @@
   box-shadow: 0 8px 32px rgba(0, 122, 255, 0.25);
 }
 
-/* COMPLETE MOBILE OVERHAUL */
+/* COMPREHENSIVE MOBILE SUPPORT FOR ALL DEVICES */
+
+/* Large Tablets and Small Laptops */
+@media (max-width: 1024px) {
+  .contact-root {
+    padding: 2rem 1rem;
+  }
+  
+  .contact-title {
+    font-size: 2rem;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    padding: 1.5rem;
+  }
+}
+
+/* Tablets (iPad, etc.) */
 @media (max-width: 768px) {
   .contact-root {
     width: 100% !important;
     max-width: 100% !important;
-    padding: 0.5rem !important;
+    padding: 1rem 0.75rem !important;
     margin: 0 !important;
     overflow-x: hidden !important;
     box-sizing: border-box !important;
   }
   
   .contact-title {
-    font-size: 1.3rem !important;
-    margin-bottom: 0.75rem !important;
-    padding: 0 0.25rem !important;
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem !important;
+    padding: 0 0.5rem !important;
     line-height: 1.2 !important;
   }
   
   .contact-socials {
     flex-direction: column !important;
-    gap: 0.5rem !important;
-    margin-bottom: 0.75rem !important;
+    gap: 0.75rem !important;
+    margin-bottom: 1rem !important;
     width: 100% !important;
     align-items: center !important;
   }
   
   .contact-social-link {
-    font-size: 1.25rem !important;
-    padding: 0.5rem !important;
-    min-width: 40px !important;
-    min-height: 40px !important;
+    font-size: 1.5rem !important;
+    padding: 0.75rem !important;
+    min-width: 50px !important;
+    min-height: 50px !important;
   }
   
   .contact-resume-btn {
-    font-size: 0.85rem !important;
-    padding: 0.6rem 1rem !important;
-    margin: 0.5rem 0 0.75rem 0 !important;
-    border-radius: 8px !important;
+    font-size: 1rem !important;
+    padding: 0.8rem 1.5rem !important;
+    margin: 0.75rem 0 1rem 0 !important;
+    border-radius: 12px !important;
     width: 100% !important;
-    max-width: 250px !important;
+    max-width: 300px !important;
   }
   
   .contact-form {
     width: 100% !important;
     max-width: 100% !important;
-    padding: 0.75rem !important;
+    padding: 1rem !important;
     margin: 0 !important;
     border: none !important;
     background: transparent !important;
@@ -194,53 +212,180 @@
   
   .contact-form-row {
     flex-direction: column !important;
-    gap: 0.25rem !important;
-    margin-bottom: 0.25rem !important;
+    gap: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
   }
   
   .contact-form-group {
-    margin-bottom: 0.75rem !important;
+    margin-bottom: 1rem !important;
     width: 100% !important;
   }
   
   .contact-form-group label {
-    font-size: 0.85rem !important;
+    font-size: 0.9rem !important;
     margin-bottom: 0.25rem !important;
   }
   
   .contact-form-group input,
   .contact-form-group textarea {
     width: 100% !important;
-    font-size: 0.9rem !important;
-    padding: 0.6rem !important;
-    border-radius: 6px !important;
+    font-size: 1rem !important;
+    padding: 0.75rem !important;
+    border-radius: 8px !important;
     border: none !important;
     background: rgba(22, 27, 34, 0.8) !important;
     box-sizing: border-box !important;
+    min-height: 44px !important;
+  }
+  
+  .contact-form-group textarea {
+    min-height: 100px !important;
+    resize: none !important;
+  }
+  
+  .contact-submit-btn {
+    font-size: 1rem !important;
+    padding: 0.8rem 1.5rem !important;
+    border-radius: 8px !important;
+    min-height: 44px !important;
+    width: 100% !important;
+  }
+}
+
+/* iPhone 16 Pro Max, iPhone 15 Pro Max, Large Phones */
+@media (max-width: 430px) {
+  .contact-root {
+    padding: 0.75rem 0.5rem !important;
+  }
+  
+  .contact-title {
+    font-size: 1.4rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .contact-socials {
+    gap: 0.6rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .contact-social-link {
+    font-size: 1.3rem !important;
+    padding: 0.6rem !important;
+    min-width: 45px !important;
+    min-height: 45px !important;
+  }
+  
+  .contact-resume-btn {
+    font-size: 0.9rem !important;
+    padding: 0.7rem 1.2rem !important;
+    margin: 0.5rem 0 0.75rem 0 !important;
+    border-radius: 10px !important;
+    max-width: 280px !important;
+  }
+  
+  .contact-form {
+    padding: 0.75rem !important;
+  }
+  
+  .contact-form-group {
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .contact-form-group label {
+    font-size: 0.85rem !important;
+  }
+  
+  .contact-form-group input,
+  .contact-form-group textarea {
+    font-size: 0.95rem !important;
+    padding: 0.65rem !important;
+    border-radius: 6px !important;
     min-height: 40px !important;
   }
   
   .contact-form-group textarea {
     min-height: 80px !important;
-    resize: none !important;
   }
   
   .contact-submit-btn {
     font-size: 0.9rem !important;
-    padding: 0.7rem 1rem !important;
+    padding: 0.7rem 1.2rem !important;
     border-radius: 6px !important;
     min-height: 40px !important;
-    width: 100% !important;
   }
 }
 
-@media (max-width: 480px) {
+/* iPhone 16 Pro, iPhone 15 Pro, iPhone 14 Pro Max, Medium Phones */
+@media (max-width: 393px) {
   .contact-root {
-    padding: 0.25rem !important;
+    padding: 0.5rem 0.4rem !important;
   }
   
   .contact-title {
-    font-size: 1.1rem !important;
+    font-size: 1.3rem !important;
+    margin-bottom: 0.6rem !important;
+  }
+  
+  .contact-socials {
+    gap: 0.5rem !important;
+    margin-bottom: 0.6rem !important;
+  }
+  
+  .contact-social-link {
+    font-size: 1.2rem !important;
+    padding: 0.5rem !important;
+    min-width: 42px !important;
+    min-height: 42px !important;
+  }
+  
+  .contact-resume-btn {
+    font-size: 0.85rem !important;
+    padding: 0.6rem 1rem !important;
+    margin: 0.4rem 0 0.6rem 0 !important;
+    border-radius: 8px !important;
+    max-width: 260px !important;
+  }
+  
+  .contact-form {
+    padding: 0.6rem !important;
+  }
+  
+  .contact-form-group {
+    margin-bottom: 0.6rem !important;
+  }
+  
+  .contact-form-group label {
+    font-size: 0.8rem !important;
+  }
+  
+  .contact-form-group input,
+  .contact-form-group textarea {
+    font-size: 0.9rem !important;
+    padding: 0.6rem !important;
+    border-radius: 6px !important;
+    min-height: 38px !important;
+  }
+  
+  .contact-form-group textarea {
+    min-height: 70px !important;
+  }
+  
+  .contact-submit-btn {
+    font-size: 0.85rem !important;
+    padding: 0.6rem 1rem !important;
+    border-radius: 6px !important;
+    min-height: 38px !important;
+  }
+}
+
+/* iPhone 16, iPhone 15, iPhone 14, iPhone 13 Pro Max, Small Phones */
+@media (max-width: 390px) {
+  .contact-root {
+    padding: 0.4rem 0.3rem !important;
+  }
+  
+  .contact-title {
+    font-size: 1.2rem !important;
     margin-bottom: 0.5rem !important;
   }
   
@@ -251,17 +396,17 @@
   
   .contact-social-link {
     font-size: 1.1rem !important;
-    padding: 0.4rem !important;
-    min-width: 35px !important;
-    min-height: 35px !important;
+    padding: 0.45rem !important;
+    min-width: 40px !important;
+    min-height: 40px !important;
   }
   
   .contact-resume-btn {
     font-size: 0.8rem !important;
-    padding: 0.5rem 0.8rem !important;
-    margin: 0.4rem 0 0.5rem 0 !important;
-    border-radius: 6px !important;
-    max-width: 200px !important;
+    padding: 0.55rem 0.9rem !important;
+    margin: 0.35rem 0 0.5rem 0 !important;
+    border-radius: 7px !important;
+    max-width: 240px !important;
   }
   
   .contact-form {
@@ -273,15 +418,78 @@
   }
   
   .contact-form-group label {
-    font-size: 0.8rem !important;
+    font-size: 0.75rem !important;
   }
   
   .contact-form-group input,
   .contact-form-group textarea {
     font-size: 0.85rem !important;
+    padding: 0.55rem !important;
+    border-radius: 5px !important;
+    min-height: 36px !important;
+  }
+  
+  .contact-form-group textarea {
+    min-height: 65px !important;
+  }
+  
+  .contact-submit-btn {
+    font-size: 0.8rem !important;
+    padding: 0.55rem 0.9rem !important;
+    border-radius: 5px !important;
+    min-height: 36px !important;
+  }
+}
+
+/* iPhone 13, iPhone 12, iPhone 11, Very Small Phones */
+@media (max-width: 375px) {
+  .contact-root {
+    padding: 0.3rem 0.2rem !important;
+  }
+  
+  .contact-title {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+  
+  .contact-socials {
+    gap: 0.35rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+  
+  .contact-social-link {
+    font-size: 1rem !important;
+    padding: 0.4rem !important;
+    min-width: 38px !important;
+    min-height: 38px !important;
+  }
+  
+  .contact-resume-btn {
+    font-size: 0.75rem !important;
+    padding: 0.5rem 0.8rem !important;
+    margin: 0.3rem 0 0.4rem 0 !important;
+    border-radius: 6px !important;
+    max-width: 220px !important;
+  }
+  
+  .contact-form {
+    padding: 0.4rem !important;
+  }
+  
+  .contact-form-group {
+    margin-bottom: 0.4rem !important;
+  }
+  
+  .contact-form-group label {
+    font-size: 0.7rem !important;
+  }
+  
+  .contact-form-group input,
+  .contact-form-group textarea {
+    font-size: 0.8rem !important;
     padding: 0.5rem !important;
     border-radius: 4px !important;
-    min-height: 35px !important;
+    min-height: 34px !important;
   }
   
   .contact-form-group textarea {
@@ -289,30 +497,124 @@
   }
   
   .contact-submit-btn {
-    font-size: 0.85rem !important;
+    font-size: 0.75rem !important;
     padding: 0.5rem 0.8rem !important;
     border-radius: 4px !important;
-    min-height: 35px !important;
+    min-height: 34px !important;
   }
 }
 
-@media (max-width: 360px) {
+/* iPhone SE, iPhone 8, iPhone 7, iPhone 6, Extra Small Phones */
+@media (max-width: 320px) {
+  .contact-root {
+    padding: 0.2rem 0.1rem !important;
+  }
+  
+  .contact-title {
+    font-size: 1rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+  
+  .contact-socials {
+    gap: 0.3rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+  
+  .contact-social-link {
+    font-size: 0.9rem !important;
+    padding: 0.35rem !important;
+    min-width: 35px !important;
+    min-height: 35px !important;
+  }
+  
+  .contact-resume-btn {
+    font-size: 0.7rem !important;
+    padding: 0.45rem 0.7rem !important;
+    margin: 0.25rem 0 0.3rem 0 !important;
+    border-radius: 5px !important;
+    max-width: 200px !important;
+  }
+  
+  .contact-form {
+    padding: 0.3rem !important;
+  }
+  
+  .contact-form-group {
+    margin-bottom: 0.3rem !important;
+  }
+  
+  .contact-form-group label {
+    font-size: 0.65rem !important;
+  }
+  
+  .contact-form-group input,
+  .contact-form-group textarea {
+    font-size: 0.75rem !important;
+    padding: 0.45rem !important;
+    border-radius: 3px !important;
+    min-height: 32px !important;
+  }
+  
+  .contact-form-group textarea {
+    min-height: 55px !important;
+  }
+  
+  .contact-submit-btn {
+    font-size: 0.7rem !important;
+    padding: 0.45rem 0.7rem !important;
+    border-radius: 3px !important;
+    min-height: 32px !important;
+  }
+}
+
+/* Ultra Small Devices (Galaxy Fold, etc.) */
+@media (max-width: 280px) {
   .contact-root {
     padding: 0.1rem !important;
   }
   
   .contact-title {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
+    margin-bottom: 0.2rem !important;
+  }
+  
+  .contact-socials {
+    gap: 0.25rem !important;
+    margin-bottom: 0.2rem !important;
+  }
+  
+  .contact-social-link {
+    font-size: 0.8rem !important;
+    padding: 0.3rem !important;
+    min-width: 32px !important;
+    min-height: 32px !important;
+  }
+  
+  .contact-resume-btn {
+    font-size: 0.65rem !important;
+    padding: 0.4rem 0.6rem !important;
+    margin: 0.2rem 0 0.25rem 0 !important;
+    border-radius: 4px !important;
+    max-width: 180px !important;
   }
   
   .contact-form {
-    padding: 0.25rem !important;
+    padding: 0.2rem !important;
+  }
+  
+  .contact-form-group {
+    margin-bottom: 0.2rem !important;
+  }
+  
+  .contact-form-group label {
+    font-size: 0.6rem !important;
   }
   
   .contact-form-group input,
   .contact-form-group textarea {
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
     padding: 0.4rem !important;
+    border-radius: 2px !important;
     min-height: 30px !important;
   }
   
@@ -321,8 +623,53 @@
   }
   
   .contact-submit-btn {
-    font-size: 0.8rem !important;
+    font-size: 0.65rem !important;
     padding: 0.4rem 0.6rem !important;
+    border-radius: 2px !important;
     min-height: 30px !important;
+  }
+}
+
+/* Landscape orientation for phones */
+@media (max-height: 500px) and (orientation: landscape) {
+  .contact-root {
+    padding: 0.5rem !important;
+  }
+  
+  .contact-title {
+    font-size: 1.2rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .contact-socials {
+    flex-direction: row !important;
+    gap: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .contact-social-link {
+    font-size: 1rem !important;
+    padding: 0.4rem !important;
+    min-width: 35px !important;
+    min-height: 35px !important;
+  }
+  
+  .contact-resume-btn {
+    font-size: 0.8rem !important;
+    padding: 0.5rem 1rem !important;
+    margin: 0.3rem 0 0.5rem 0 !important;
+    max-width: 200px !important;
+  }
+  
+  .contact-form {
+    padding: 0.5rem !important;
+  }
+  
+  .contact-form-group {
+    margin-bottom: 0.4rem !important;
+  }
+  
+  .contact-form-group textarea {
+    min-height: 60px !important;
   }
 } 
