@@ -153,7 +153,7 @@ function App() {
           </div>
           <div className="nav-social">
             <a
-              href="https://linkedin.com/in/shlokthakkar"
+              href="https://www.linkedin.com/in/shlok-thakkar/"
               target="_blank"
               rel="noopener noreferrer"
               className="nav-social-link linkedin-link"
@@ -165,7 +165,7 @@ function App() {
               <span className="social-tooltip">LinkedIn</span>
             </a>
             <a
-              href="https://github.com/shlokthakkar"
+              href="https://github.com/shlok1806"
               target="_blank"
               rel="noopener noreferrer"
               className="nav-social-link github-link"
