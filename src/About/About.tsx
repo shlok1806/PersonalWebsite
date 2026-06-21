@@ -11,7 +11,7 @@ const About: React.FC = () => {
           <div className="about-card-content">
             <h3 className="about-card-heading">Who I Am</h3>
             <p className="about-card-text">
-              Hi! I'm a Data Scientist & Software Engineer who loves building high-performance solutions at the intersection of technology and finance.
+              Hi! I'm a backend-focused Software Engineer who loves building systems that hold up under load — distributed infrastructure, low-latency data structures, and real-world performance constraints.
             </p>
           </div>
         </div>
@@ -20,7 +20,7 @@ const About: React.FC = () => {
           <div className="about-card-content">
             <h3 className="about-card-heading">What I Do</h3>
             <p className="about-card-text">
-              My background is in Information Science & Data Science, with a focus on algorithms, machine learning, and quantitative methods. I work with C++ for high-performance computing and Python for data science.
+              I study Computer Science + Economics (Minor in Statistics) at UIUC, with a focus on distributed systems, algorithms, and parallel computing. I work in Go, C++, and Python for backend work, and Swift for iOS.
             </p>
           </div>
         </div>
@@ -29,7 +29,7 @@ const About: React.FC = () => {
           <div className="about-card-content">
             <h3 className="about-card-heading">What Drives Me</h3>
             <p className="about-card-text">
-              I'm passionate about open source, creative problem-solving, and collaborating on innovative projects. Always learning, always building.
+              I'm passionate about correctness, performance, and the kind of reliability that holds under load. Always learning, always building.
             </p>
           </div>
         </div>

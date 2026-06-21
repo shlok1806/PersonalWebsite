@@ -12,11 +12,11 @@ const Hero: React.FC<HeroProps> = ({ scrollToSection }) => {
   const [isDeleting, setIsDeleting] = useState(false);
 
   const rotatingInterests = [
-    "const string passion = \"Quantitative Finance\";",
-    "auto expertise = \"Machine Learning\";",
-    "std::string focus = \"Algorithmic Trading\";",
-    "template<typename T> T build() { return \"Innovation\"; }",
-    "class Skills : public vector<string> {C++, Python, Java};"
+    "func consensus() -> Raft { return Raft.new() }",
+    "auto expertise = \"Distributed Systems\";",
+    "std::string focus = \"Low-Latency Infrastructure\";",
+    "template<typename T> T build() { return \"Backend Systems\"; }",
+    "class Skills : public vector<string> {Go, Python, C++, Swift};"
   ];
 
   useEffect(() => {
@@ -49,18 +49,18 @@ const Hero: React.FC<HeroProps> = ({ scrollToSection }) => {
             <span className="gradient-text">Shlok Thakkar</span>
           </h1>
           <p className="hero-subtitle">
-            Information Science & Data Science student, passionate
+            Computer Science + Economics student, passionate
           </p>
           <p className="hero-description">
-            about quantitative finance, machine learning, and software engineering. 
-            I build high-performance solutions and explore the intersection of 
-            technology and finance.
+            about distributed systems, backend infrastructure, and low-latency
+            software engineering. I build systems at the intersection of
+            performance and correctness.
           </p>
         </div>
 
         <div className="hero-intro">
           <h2 className="hero-subtitle">
-            Data Scientist & Software Engineer
+            Software Engineer
           </h2>
           <div className="code-window">
             <div className="code-header">
