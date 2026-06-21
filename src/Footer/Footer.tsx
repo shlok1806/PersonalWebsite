@@ -17,9 +17,9 @@ const Footer: React.FC = () => {
           <div className="footer-section">
             <h3>Shlok Thakkar</h3>
             <p>
-              Software Engineer passionate about distributed systems, backend
-              infrastructure, and high-performance computing. Always eager to tackle
-              complex problems and build reliable solutions.
+              Data Scientist and Software Engineer passionate about quantitative finance, 
+              machine learning, and high-performance computing. Always eager to tackle 
+              complex problems and build innovative solutions.
             </p>
             <div className="social-links">
               <a href="https://www.linkedin.com/in/shlok-thakkar/" target="_blank" rel="noopener noreferrer" className="social-link">
@@ -43,7 +43,6 @@ const Footer: React.FC = () => {
               <li><a href="#about" onClick={() => scrollToSection('about')}>About</a></li>
               <li><a href="#experience" onClick={() => scrollToSection('experience')}>Experience</a></li>
               <li><a href="#projects" onClick={() => scrollToSection('projects')}>Projects</a></li>
-              <li><a href="#awards" onClick={() => scrollToSection('awards')}>Awards</a></li>
               <li><a href="#skills" onClick={() => scrollToSection('skills')}>Skills</a></li>
               <li><a href="#contact" onClick={() => scrollToSection('contact')}>Contact</a></li>
             </ul>
@@ -54,7 +53,7 @@ const Footer: React.FC = () => {
             <h3>Contact</h3>
             <ul className="footer-links">
               <li>
-                <span>Email: shlokthakkar1806@gmail.com</span>
+                <span>Email: shlok.thakkar@gmail.com</span>
               </li>
               <li>
                 <span>Location: United States</span>
@@ -66,12 +65,12 @@ const Footer: React.FC = () => {
           <div className="footer-section">
             <h3>Expertise</h3>
             <ul className="footer-links">
-              <li>Distributed Systems</li>
-              <li>Backend Infrastructure</li>
-              <li>iOS Development</li>
+              <li>Data Science</li>
+              <li>Machine Learning</li>
+              <li>Quantitative Finance</li>
               <li>Software Engineering</li>
               <li>C++ Development</li>
-              <li>Parallel Computing</li>
+              <li>Algorithmic Trading</li>
             </ul>
           </div>
         </div>
@@ -79,7 +78,7 @@ const Footer: React.FC = () => {
         {/* Footer Bottom */}
         <div className="footer-bottom">
           <p>
-            © 2026 Shlok Thakkar. All rights reserved. |
+            © 2024 Shlok Thakkar. All rights reserved. | 
             Built with React & TypeScript | 
             <a href="https://github.com/shlok1806" target="_blank" rel="noopener noreferrer"> View Source</a>
           </p>

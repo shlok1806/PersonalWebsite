@@ -13,36 +13,41 @@ interface ExperienceItem {
 const Experience: React.FC = () => {
   const experience: ExperienceItem[] = [
     {
-      title: "Undergraduate Research Assistant",
-      company: "Parallel Programming Laboratory, UIUC",
+      title: "Machine Learning Lead Dev",
+      company: "Storm Drones @ UIUC",
       location: "Champaign, IL",
-      period: "Apr. 2026 – Present",
-      description: "Replaced SUMMA with Cannon's algorithm and a circular-shift communication pattern, cutting per-step message startup overhead in distributed matrix multiplication across multi-node Charm++ clusters. Extended Charm++'s distributed array abstraction with custom operators, relational/logical operations, and broadcasting support for high-performance parallel workloads.",
-      technologies: ["C++", "Charm++", "Parallel Computing", "Distributed Systems"]
+      period: "Jan. 2025 – Present",
+      description: "Developed predictive models to estimate drone battery life using machine learning techniques, improving operational forecasting. Achieved 98% accuracy, enabling precise battery monitoring and enhancing flight reliability and safety.",
+      technologies: ["Python", "TensorFlow", "Scikit-learn", "C++", "ROS"]
     },
     {
-      title: "Software Developer",
-      company: "Disruption Lab @ UIUC",
+      title: "Co-founder",
+      company: "Minti",
       location: "Champaign, IL",
-      period: "Sept. 2025 – Present",
-      description: "Delivered a Python-based XSD parser for a Fortune 500 financial services client's 44-jurisdiction tax schema pipeline, expanding schema diff coverage from 7 to 27 states (+286%) and validating correctness with 43 unit tests. Built a REST API in Python (Flask) and Neo4j giving 40+ users a fully editable project-resource dependency graph.",
-      technologies: ["Python", "Flask", "Neo4j", "lxml"]
+      period: "Feb 2025 – Present",
+      description: "Developed 'Minti,' an AI-powered budgeting app that connects to users' bank accounts and calendars, integrating bank APIs to analyze expenses and provide weekly, adaptive budget plans.",
+      technologies: ["NodeJS", "React", "JavaScript", "Python", "OpenAI API"]
     },
     {
-      title: "Undergraduate Research Assistant",
-      company: "Department of Finance, UIUC",
-      location: "Champaign, IL",
-      period: "May 2025 – Dec. 2025",
-      description: "Designed a custom NLP pipeline combining TF-IDF vectorization, Levenshtein distance, and fuzzy matching to link firms across 10M+ records for Prof. Tatyana Deryugina's research. Reduced entity resolution runtime by 73% via batched normalization and deduplication, achieving a 63% firm-level match rate across TED and ORBIS.",
-      technologies: ["Python", "NLP", "Pandas", "SciPy"]
-    },
-    {
-      title: "Software Development Intern",
+      title: "Data Science Intern",
       company: "IQM Corporation",
       location: "Ahmedabad, India",
-      period: "June 2025 – Aug. 2025",
-      description: "Reduced P95 response latency 40% by architecting an async LLM pipeline on AWS Bedrock with Pydantic-validated JSON extraction, serving 40+ enterprise users. Shipped a FastAPI microservice on AWS EC2 processing 10,000+ candidate profiles with JWT authentication, plus an S3-backed CSV ingestion pipeline for downstream ML matching.",
-      technologies: ["FastAPI", "AWS Bedrock", "AWS EC2", "AWS S3", "Pydantic"]
+      period: "July 2025 – August 2025",
+      description: "Developed and deployed a scalable LLM for advertisement recommendation system using PyTorch and Python, leveraging customer data to personalize product suggestions and enhance user engagement by 44%. Improved operational efficiency and customer click rate by implementing personalized advertisement for users.",
+      technologies: ["Python", "PyTorch", "LLM", "Machine Learning", "Data Science"]
+    },
+    {
+      title: "Software Engineer Intern",
+      company: "Storm Drones",
+      location: "Champaign, IL",
+      period: "May 2024 - Present",
+      description: [
+        "Developed and maintained high-performance C++ applications for drone control systems",
+        "Implemented real-time data processing algorithms for sensor fusion and navigation",
+        "Collaborated with cross-functional teams to optimize system performance and reliability",
+        "Contributed to the development of autonomous flight algorithms and safety protocols"
+      ].join(' '),
+      technologies: ["C++", "Python", "ROS", "Linux", "Git"]
     },
   ];
 
@@ -51,13 +56,13 @@ const Experience: React.FC = () => {
       <h2 className="section-title">Experience</h2>
       <div className="experience-intro">
         <p className="experience-description">
-          My professional journey spans distributed systems, backend infrastructure, and applied research.
-          Each role has contributed to my expertise in building reliable, high-performance software.
+          My professional journey spans machine learning, software engineering, and quantitative finance. 
+          Each role has contributed to my expertise in building innovative solutions and leading technical projects.
         </p>
       </div>
       <div className="experience-grid">
         {experience.map((exp) => (
-          <div key={exp.company} className="experience-card">
+          <div key={exp.title} className="experience-card">
             <div className="experience-header">
               <h3 className="experience-title">{exp.title}</h3>
               <span className="experience-company">{exp.company}</span>

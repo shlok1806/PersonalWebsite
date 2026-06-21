@@ -13,20 +13,52 @@ interface Project {
 const Projects: React.FC = () => {
   const projects: Project[] = [
     {
-      title: "Scroll Royale",
-      description: "Built a 1v1 competitive iOS doomscrolling game at HackIllinois using SwiftUI and Supabase with real-time telemetry-driven scoring. Implemented matchmaking and live leaderboard sync over Supabase PostgreSQL RPC functions with JWT auth and proactive token refresh, plus a TTL-based feed cache with stale-while-revalidate to minimize cold-start latency.",
-      tech: ["SwiftUI", "Combine", "AVKit", "Supabase", "PostgreSQL"],
-      github: "https://github.com/shlok1806/ScrollClash",
-      status: "Feb 2026",
-      category: "iOS"
+      title: "Black-Scholes Pricer",
+      description: "Designed and implemented a robust Black-Scholes options pricer in Python, accurately computing theoretical prices and key option Greeks (Delta, Gamma, Theta, Vega, and Rho) to support quantitative risk management and optimized hedging strategies.",
+      tech: ["Python", "Streamlit", "TailwindCSS", "Docker", "NumPy", "Pandas", "Matplotlib"],
+      github: "https://github.com/shlok1806",
+      status: "March 2025 – Present",
+      category: "Quantitative Finance"
     },
     {
-      title: "Limit Order Book",
-      description: "Engineered a thread-safe C++20 limit order book with 5 order types (GTC, FOK, FAK, GFD, Market) and FIFO price-time priority matching. Achieved O(1) cancellation via per-order iterators into price-level linked lists, and built an incremental LevelData cache reducing FOK pre-check complexity from O(N) to O(P) — a ~500x improvement for sparse price-level books.",
-      tech: ["C++20", "CMake", "Catch2"],
-      github: "https://github.com/shlok1806/OrderBook",
-      status: "Mar 2026",
-      category: "Systems"
+      title: "Quant Apogee",
+      description: "Developed an algorithmic trading backtesting engine that implements statistical arbitrage strategies and Monte Carlo simulations to evaluate risk-adjusted performance metrics (such as Sharpe Ratio and VaR) using historical market data.",
+      tech: ["Python", "NumPy", "SciPy", "Plotly Dash", "Git", "Pandas"],
+      github: "https://github.com/shlok1806",
+      status: "Jan 2025 – Present",
+      category: "Algorithmic Trading"
+    },
+    {
+      title: "Minti",
+      description: "Co-founded and developed an AI-powered budgeting app that connects to users' bank accounts and calendars, integrating bank APIs to analyze expenses and provide weekly, adaptive budget plans.",
+      tech: ["NodeJS", "React", "JavaScript", "Python", "OpenAI"],
+      github: "https://github.com/shlok1806/Minti",
+      status: "Feb 2025 – Present",
+      category: "AI/ML"
+    },
+    {
+      title: "Monte Carlo Simulation",
+      description: "Implementation of Monte Carlo simulation techniques for financial modeling and risk analysis. Features advanced statistical methods for option pricing and portfolio optimization.",
+      tech: ["Python", "Statistics", "Financial Modeling", "NumPy", "SciPy"],
+      github: "https://github.com/shlok1806/MonteCarlo-Simulation",
+      status: "Completed",
+      category: "Quantitative Finance"
+    },
+    {
+      title: "Macro Insight",
+      description: "Python-based macroeconomic analysis tool for studying economic indicators and market trends. Provides comprehensive data visualization and statistical analysis capabilities.",
+      tech: ["Python", "Economics", "Data Analysis", "Pandas", "Matplotlib"],
+      github: "https://github.com/shlok1806/Macro-Insight",
+      status: "Completed",
+      category: "Data Science"
+    },
+    {
+      title: "Lending Prediction",
+      description: "Machine learning model for predicting lending outcomes using Jupyter notebooks and statistical analysis. Implements various ML algorithms for credit risk assessment.",
+      tech: ["Jupyter", "Machine Learning", "Predictive Modeling", "Scikit-learn"],
+      github: "https://github.com/shlok1806/LendingPrediction",
+      status: "Completed",
+      category: "Machine Learning"
     },
   ];
 
@@ -35,9 +67,9 @@ const Projects: React.FC = () => {
       <h2 className="section-title">Projects</h2>
       <div className="projects-intro">
         <p className="projects-description">
-          A collection of projects showcasing my expertise in distributed systems,
-          backend infrastructure, and iOS development. Each project demonstrates
-          practical applications of performance-focused engineering.
+          A collection of projects showcasing my expertise in quantitative finance, 
+          machine learning, and software engineering. Each project demonstrates 
+          practical applications of advanced algorithms and modern technologies.
         </p>
       </div>
       <div className="projects-grid">

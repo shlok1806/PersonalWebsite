@@ -9,7 +9,6 @@ import Hero from "./Hero/Hero";
 import About from "./About/About";
 import Experience from "./Experience/Experience";
 import Projects from "./Projects/Projects";
-import Awards from "./Awards/Awards";
 import Skills from "./Skills/Skills";
 import Contact from "./Contact/Contact";
 import Footer from "./Footer/Footer";
@@ -39,8 +38,6 @@ function App() {
     "home",
     "about",
     "experience",
-    "projects",
-    "awards",
     "skills",
     "contact",
   ];
@@ -78,7 +75,6 @@ function App() {
         "about",
         "experience",
         "projects",
-        "awards",
         "skills",
         "contact",
       ];
@@ -214,15 +210,6 @@ function App() {
           <div className="container">
             <IDEWindow fileName="projects.cpp">
               <Projects />
-            </IDEWindow>
-          </div>
-        </section>
-
-        {/* Awards Section in IDE Window */}
-        <section id="awards" className="section">
-          <div className="container">
-            <IDEWindow fileName="awards.md">
-              <Awards />
             </IDEWindow>
           </div>
         </section>

@@ -10,24 +10,24 @@ interface SkillCategory {
 const Skills: React.FC = () => {
   const skills: SkillCategory[] = [
     {
-      category: "Languages",
-      skills: ["Swift", "C/C++", "Python", "TypeScript", "Go", "SQL", "Java", "R"],
+      category: "Programming Languages",
+      skills: ["C++", "Python", "Java", "JavaScript", "SQL", "R", "HTML/CSS"],
       icon: "💻"
     },
     {
-      category: "Frameworks",
-      skills: ["SwiftUI", "Combine", "AVKit", "FastAPI", "Flask", "Next.js", "LangChain"],
+      category: "Frameworks & Tools",
+      skills: ["React", "Node.js", "Flask", "Docker", "Git", "MongoDB", "WordPress"],
       icon: "⚙️"
     },
     {
-      category: "Databases",
-      skills: ["PostgreSQL", "Neo4j", "Supabase", "MongoDB"],
-      icon: "🗄️"
+      category: "Data Science & ML",
+      skills: ["Pandas", "NumPy", "Matplotlib", "Scikit-learn", "TensorFlow", "PyTorch", "Streamlit"],
+      icon: "🤖"
     },
     {
-      category: "Cloud & DevOps",
-      skills: ["AWS Bedrock", "AWS S3", "AWS EC2", "Azure Blob", "Docker", "Git", "CMake"],
-      icon: "☁️"
+      category: "Quantitative Finance",
+      skills: ["Black-Scholes", "Monte Carlo", "Risk Management", "Algorithmic Trading", "Options Pricing"],
+      icon: "📊"
     },
   ];
 
@@ -36,9 +36,9 @@ const Skills: React.FC = () => {
       <h2 className="section-title">Skills</h2>
       <div className="skills-intro">
         <p className="skills-description">
-          A comprehensive toolkit of programming languages, frameworks, and infrastructure
-          tools. Each skill has been developed through hands-on projects, research, and
-          real-world internship work.
+          A comprehensive toolkit of programming languages, frameworks, and specialized 
+          knowledge in quantitative finance and machine learning. Each skill has been 
+          developed through hands-on projects and real-world applications.
         </p>
       </div>
       <div className="skills-grid">
